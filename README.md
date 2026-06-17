@@ -58,7 +58,7 @@ The project is hosted and running in the cloud through InfinityFree.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/agency-management-system.git
+git clone https://github.com/V-Charles/agency-management-system.git
 cd agency-management-system
 ```
 
