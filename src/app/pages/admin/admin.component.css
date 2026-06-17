@@ -30,6 +30,7 @@
 
 .colaboradores-table {
   width: 100%;
+  min-width: 650px;
   margin-top: 10px;
   border-radius: 8px;
   overflow: hidden;
@@ -39,4 +40,17 @@ th.mat-mdc-header-cell {
   font-weight: bold;
   font-size: 1.05rem;
   color: #673ab7;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 15px 10px;
+  }
 }
