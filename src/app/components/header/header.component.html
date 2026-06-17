@@ -1,7 +1,20 @@
 <mat-toolbar color="primary" class="navbar">
     <span class="logo" routerLink="/home">Agência Angular</span>
     <span class="spacer"></span>
-    <button mat-button routerLink="/home">Home</button> | 
-    <button mat-button routerLink="/sobre">Sobre a Empresa</button> | 
-    <button mat-button routerLink="/admin">Painel Administrativo</button>
+    
+    <div class="desktop-menu">
+        <button mat-button routerLink="/home">Home</button> | 
+        <button mat-button routerLink="/sobre">Sobre a Empresa</button> | 
+        <button mat-button routerLink="/admin">Painel Administrativo</button>
+    </div>
+
+    <button mat-icon-button [matMenuTriggerFor]="menuMobile" class="mobile-menu-btn">
+        <mat-icon>menu</mat-icon>
+    </button>
+    
+    <mat-menu #menuMobile="matMenu">
+        <button mat-menu-item routerLink="/home">Home</button>
+        <button mat-menu-item routerLink="/sobre">Sobre a Empresa</button>
+        <button mat-menu-item routerLink="/admin">Painel Administrativo</button>
+    </mat-menu>
 </mat-toolbar>

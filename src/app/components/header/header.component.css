@@ -1,15 +1,22 @@
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.spacer {
+  flex: 1 1 auto;
 }
 
 .logo {
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 8px; 
 }
 
-.spacer {
-    flex: 1 1 auto;
+.mobile-menu-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
 }
